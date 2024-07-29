@@ -9,5 +9,8 @@ def index(request):
     if form.is_valid():
         form.save()
         messages.success(request, 'Your form has been submitted, thank you!')
-        return redirect('index')
+        return redirect('success')
     return render(request, 'core/index.html', {'faqs': faqs})
+
+def success(request):
+    return render(request, 'core/success.html')

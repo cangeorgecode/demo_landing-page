@@ -1,0 +1,11 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="container pt-4 text-center">
+    <h1>Thank you!</h1>
+    <img src="{% static 'img/bean.jpeg' %}" alt="Thank you for signing up">
+    <br>
+    <p>You have just made my day. Here is your free guide!</p>
+    <a href="{% static 'assets/Guide.pdf' %}">Download</a>
+</div>
+{% endblock content %}

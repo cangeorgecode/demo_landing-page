@@ -1,11 +1,28 @@
 {% extends 'core/base.html' %}
 {% block content %}
 
+<div class="container pt-3 pb-3">
 {% include 'core/hero.html' %}
-{% include 'core/benefits.html' %}
-{% include 'core/social_proof.html' %}
+</div>
+
+<div class="container pt-3 pb-3">
+    {% include 'core/benefits.html' %}
+</div>
+
+<div class="container pt-3 pb-3">
+    {% include 'core/social_proof.html' %}
+</div>
+
+<div class="container pt-3 pb-3">
 {% include 'core/faq.html' %}
+</div>
+
+<div class="container pt-3 pb-3">
 {% include 'core/cta.html' %}
+</div>
+
+<div class="container pt-3 pb-3">
 {% include 'core/footer.html' %}
+</div>
 
 {% endblock content %}
